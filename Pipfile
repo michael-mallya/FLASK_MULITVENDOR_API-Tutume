@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+python-dotenv = "*"
+flask-sqlalchemy = "*"
+flask-bcrypt = "*"
+flask-jwt-extended = "*"
+flask-restx = "*"
+marshmallow = "*"
+flask-migrate = "*"
+flask-admin = "*"
+flask-mail = "*"
+flask-session = "*"
+azure-storage-blob = "*"
+psycopg2 = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"
