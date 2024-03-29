@@ -35,3 +35,4 @@ flask_session
 flask_cors
 azure-mgmt-storage
 azure-storage-blob
+psycopg2
