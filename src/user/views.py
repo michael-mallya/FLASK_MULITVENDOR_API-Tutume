@@ -65,7 +65,7 @@ class PromoteAdminView(Resource):
     @token_required
     @permission_required
     def post(self):
-        "promote account to admin"
+        "promote ac]count to admin"
         request_data = request.get_json()
         user =  User.find_by_id(request_data.get("id"))
         if not user:
@@ -96,8 +96,8 @@ class UserActivateView(Resource):
             return error_response, 400
 
         user.update({'is_activated': True})
-        # user_cart = Cart(user_id=user.id)
-        # user_cart.save()
+        #user_cart = Cart(user_id=user.id)
+        #user_cart.save()
 
         return {
             'status': 'success',

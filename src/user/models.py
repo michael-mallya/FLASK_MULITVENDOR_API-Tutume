@@ -15,7 +15,7 @@ class User(BaseModel):
     is_seller = db.Column(db.Boolean, nullable=False,default=False)
     is_admin = db.Column(db.Boolean, default=False, nullable=False)
     is_activated = db.Column(db.Boolean, default=False, nullable=False)
-
+     
     @classmethod
     def find_by_email(cls, user_email):
         """ Finds a user instance by email """

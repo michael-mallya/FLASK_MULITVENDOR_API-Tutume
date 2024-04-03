@@ -30,7 +30,8 @@ def token_required(f):
         try:
             decoded_token = jwt.decode(token, os.getenv(
                 'SECRET_KEY'), algorithms=['HS256'])
-            # current_user = User.query.filter_by(id=decoded_token['id']).first()
+            
+            current_user = User.query.filter_by(id=decoded_token['id']).first()
           
             session.current_user = decoded_token.get("user")
     

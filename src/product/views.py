@@ -153,8 +153,8 @@ class ProductView(Resource):
         return success_response,204
 
     @api.expect(product_update_model)
-    # @token_required
-    # @permission_seller
+    @token_required
+    @permission_seller
     def patch(self):
         "ENDPOINT  to update product by the seller"
         request_data = request.get_json()

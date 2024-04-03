@@ -44,7 +44,7 @@ class Cart(BaseModel):
     
     owner = db.relationship('User', backref='owner', lazy='joined')
     items = db.relationship('CartItem', backref='items', lazy='joined')
-    # delivery_address = db.relationship('Address', backref='delivery_address', lazy='joined')
+    delivery_address = db.relationship('Address', backref='delivery_address', lazy='joined')
 class CheckOut(BaseModel):
     """ CheckOut Model class """
 
